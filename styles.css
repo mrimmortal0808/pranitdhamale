@@ -1,0 +1,627 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.ibb.co/NpjjNYn/web-bg.webp');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-left {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    font-size: 30px;
+    color:#000000;
+    
+}
+.header-right a {
+    margin-left: 30px; /* Increase the left margin between each link */
+    text-decoration: none;
+    color: #000000;
+}
+
+.header-right a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.section {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns, each taking half of the section width */
+    align-items: center; /* Center items vertically */
+}
+
+.intro {
+    text-align: left; /* Align text to the left */
+    margin-top: 50px;
+    padding-left: 20px; /* Add padding to the left for shifting */
+    font-size: 35px; /* Increase font size */
+    max-width: 1000px; /* Limit maximum width */
+    margin-left: 50px; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+/* Add CSS animation for typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+.my-intro {
+    overflow: hidden;
+    border-right: .15em solid rgb(209, 206, 200);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end ;
+}
+
+/* Cursor animation */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+
+
+
+
+
+
+/* Example CSS for scroll animations */
+.animated {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.animate-in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Example CSS for hover effects */
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Example CSS for parallax effect */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateZ(0);
+    perspective: 1000px;
+}
+
+.parallax-foreground {
+    transform: translateZ(-1px) scale(2);
+}
+
+.parallax-background {
+    transform: translateZ(-2px) scale(3);
+}
+/* Example CSS for modal animation */
+.modal {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.active {
+    opacity: 1;
+}
+
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: -150px;
+    margin-left: 330px; /* Add margin from the left */
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.spline-viewer-container {
+    justify-self: end; /* Align to the end of the grid cell (right side) */
+    margin-left: auto; /* Push to the right */
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+
+.social-icons {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 180px;
+}
+
+.social-icon {
+    margin-right: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.social-icon img {
+    width: 50px; /* Adjust the size of the social media icons */
+    margin-left: 10;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#about {
+    padding: 20px;
+    max-width: 1200px;
+    
+    margin: 60px auto 0 auto;  /* Add margin-top to shift it down */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.timeline {
+    margin-bottom: 40px;
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline-item {
+    padding: 20px;
+    background-color: #000204;
+    border-left: 5px solid #007bff;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+#additional-skills {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.timeline {
+    margin-bottom: 40px;
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline-item {
+    padding: 20px;
+    background-color: #010304;
+    border-left: 5px solid #007bff;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+.skills {
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.skill {
+    background-color: #000000;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skill h3 {
+    margin-bottom: 10px;
+   
+}
+
+.skill p {
+    color: #666;
+}
+
+.additional-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #007bff;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #000000;
+    border-radius: 10px;
+}
+
+.skill-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.skill-card h3 {
+    margin-bottom: 3px;
+    margin-top: 1px;
+    font-size: 35px;
+}
+
+.skill-card p {
+    color: #000000;
+}
+
+
+
+
+
+
+
+#portfolio {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#portfolio h2 {
+    margin-bottom: 40px;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    position: relative;
+    width: 30%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.contact-section {
+    background-color: #282c34; /* Fallback color */
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    min-height: 500px; /* Adjust this value as needed */
+}
+
+.contact-form {
+    background-image: url('https://i.ibb.co/L5FyJYg/software-developer-6521720-1280-1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 500px; /* Ensure the background covers the entire container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+}
+
+.contact-form h2 {
+    margin-bottom: 150px;
+    font-size: 60px;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 10px;
+    width: 100%; /* Ensure form takes full width */
+    max-width: 300px; /* Adjust the width as needed */
+    margin-left: auto; /* Shift form to the right */
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.9); /* Adjust background opacity for readability */
+    color: #000; /* Adjust text color */
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.thank-you {
+    text-align: center;
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+}
+
+.thank-you h2 {
+    margin-bottom: 10px;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.contact-list li img {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-link img {
+    width: 35px;
+    height: 35px;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* Keyframes for sliding animation */
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.timeline-item {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.animation-slide-in {
+    opacity: 1;
+}
+
+
+/* Apply animation to each timeline item */
+.timeline-item {
+    padding: 20px;
+    background-color: #010304;
+    border-left: 5px solid #007bff;
+    position: relative;
+    animation: slideInFromLeft 7s ease-out forwards; /* Adjust animation duration and timing */
+}
+
+
+
